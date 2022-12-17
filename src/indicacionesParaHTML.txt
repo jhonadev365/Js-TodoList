@@ -1,0 +1,2 @@
+1_:Debemos apuntar el script de importacion de documentos de java script hacia "-script src="../dist/main.js"-"
+2_:Volvemos a ejecutar "npm run build" en la linea de comandos depues de cada CAMBIO ECHO EN CUALQUIER ARCHIVO JAVASCRIPT

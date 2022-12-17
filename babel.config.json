@@ -1,0 +1,5 @@
+{
+  //***ESTOS PLUGINS DE BABEL NOS PERMITEN TENER EL CODIGO DE JAVASCRIPT LO MAS
+  //*** "RESPONSIVE" A LOS NAVEGADORES, POSIBLE.
+  "presets": ["@babel/preset-env","minify"]
+}

@@ -1,0 +1,12 @@
+CARGA DINAMICA DE ESTILOS CON webpack
+1_: Debemos instalar los paquetes correspondientes({npm i -D css-loader style-loader})
+2_: Configuramos el PACKAGE.json dentro de module en el apartado de rules ponemos las siguiente lineas de codigo.
+	{
+		test: /\.css$/,
+		use:[
+			'style-loader',
+			'css-loader'
+		]
+	},
+3_: en el archivo de javascript en el que queramos poner los estilos, debemos importar los ESTILOS DE FORMA NORMAL 
+	import '../css/componentes.css';

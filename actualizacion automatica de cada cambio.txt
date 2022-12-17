@@ -1,0 +1,4 @@
+1_:Debemos instalar webpack developer server ({npm i -D webpack-dev-server})
+2_:En el archivo de (package.json) debemos añadir a "scripts" la siguiente linea de codigo
+["start":"webpack-dev-server --open --port=8082"] sin los corchetes
+3_: Y para levantar el servicio debemos poner en la linea de comandos [npm start] y asi comenzara a correr el servidor
