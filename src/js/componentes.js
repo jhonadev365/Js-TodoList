@@ -7,11 +7,15 @@ import '../css/componentes.css';
 
 export const saludar =(nombre)=>{
 	console.log('Creando etiqueta HTML');
+	
+	const validation= document.getElementById('message');
 
-	const h1 = document.createElement('h1');
+	if (validation == null) {
+		console.log('No se encontro la etiqueta');
 
-	h1.innerText = `Hola!!! ${nombre}`;
+	}else{
+		validation.innerText = `Hola!!! ${nombre}`;
 
-	document.getElementById("cuadro").appendChild(h1);
+	}
 
 }
