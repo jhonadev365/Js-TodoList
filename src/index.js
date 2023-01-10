@@ -1,16 +1,14 @@
-import {saludar} from './js/componentes';
-import './style.css';
+import './styles.css';
 
-//const nombre = 'Error ';
+import {Todo, TodoList} from './classes'; //Con esta notacion busca el archivo index.js en la carpeta especificada.
+import {crearTodoHtml} from './js/componentes'; 
 
-const element_btn = document.getElementById("btn_greet");
-const element_input = document.getElementById("usr_name");
+export const todoList = new TodoList(); //instancia la clase y crea un array 
 
-element_btn.addEventListener('click', function (){
-	if (element_input.value != '') {
-		saludar(element_input.value);
-	}else{
-		alert('Ingrese un nombre valido...');
-	}
-});
+console.log(todoList.todos);
 
+//PRIMERA FORMA
+// todoList.todos.forEach(todo => crearTodoHtml(todo));
+
+//SEGUNDA FORMA
+todoList.todos.forEach(crearTodoHtml);
